@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:30:33 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/11 18:07:55 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/16 10:46:33 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_sqrt(int nb)
 	if (nb < 0)
 		return (0);
 	i = 1;
-	while (i <= nb)
+	while (i * i <= nb && i <= 46340)
 	{
 		if (i * i == nb)
 			return (i);
