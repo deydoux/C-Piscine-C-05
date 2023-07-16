@@ -6,18 +6,23 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:30:33 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/16 10:46:33 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/16 11:24:16 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
 	int	i;
+	int	div;
 
-	if (nb < 0)
+	if (nb <= 0)
 		return (0);
 	i = 1;
-	while (i * i <= nb && i <= 46340)
+	if (nb > 25)
+		div = 6;
+	else
+		div = 6;
+	while (i <= nb / div)
 	{
 		if (i * i == nb)
 			return (i);
