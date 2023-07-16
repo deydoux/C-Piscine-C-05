@@ -6,7 +6,7 @@
 /*   By: deydoux <deydoux@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 17:30:33 by deydoux           #+#    #+#             */
-/*   Updated: 2023/07/16 11:24:16 by deydoux          ###   ########.fr       */
+/*   Updated: 2023/07/16 17:10:41 by deydoux          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_sqrt(int nb)
 	if (nb > 25)
 		div = 6;
 	else
-		div = 6;
+		div = 2;
 	while (i <= nb / div)
 	{
 		if (i * i == nb)
